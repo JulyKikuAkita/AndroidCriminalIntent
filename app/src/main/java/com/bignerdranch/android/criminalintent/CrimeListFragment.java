@@ -20,6 +20,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
+/**
+ * TODO: Challenge: An Empty View for the RecyclerView
+ */
 public class CrimeListFragment extends Fragment {
     private RecyclerView mCrimeRecycleView;
     private CrimeAdapter mAdapter;
@@ -135,6 +138,7 @@ public class CrimeListFragment extends Fragment {
             mAdapter = new CrimeAdapter(crimes);
             mCrimeRecycleView.setAdapter(mAdapter);
         } else {
+            mAdapter.setCrimes(crimes);
             //mAdapter.notifyDataSetChanged(); //inefficient, recreate whole list
             mAdapter.notifyItemChanged(getAdapterPosition());
         }
@@ -162,6 +166,10 @@ public class CrimeListFragment extends Fragment {
         @Override
         public int getItemCount() {
             return mCrimes.size();
+        }
+
+        public void setCrimes(List<Crime> crimes) {
+            mCrimes = crimes;
         }
 
         // Note: keep small and efficient to ensure smooth scroll
