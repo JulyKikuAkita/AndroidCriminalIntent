@@ -1,0 +1,25 @@
+package com.bignerdranch.android.criminalintent;
+
+/**
+ * NOt in use, replaced by CrimePagerActivity
+ */
+/*
+public class CrimeActivity extends SingleFragmentActivity {
+    private String TAG = getClass().getCanonicalName();
+    private static final String EXTRA_CRIME_ID =
+            "com.bignerdranch.android.criminalintent.crime_id";
+
+    public static Intent newIntent(Context packageContext, UUID crimeId) {
+        Intent intent = new Intent(packageContext, CrimeActivity.class);
+        intent.putExtra(EXTRA_CRIME_ID, crimeId);
+        return intent;
+    }
+
+    @Override
+    protected Fragment createFragment() {
+        Log.d(TAG, "Create new CrimeFragment");
+        UUID crimeID = (UUID) getIntent().getSerializableExtra(EXTRA_CRIME_ID);
+        return CrimeFragment.newInstance(crimeID);
+    }
+}
+*/
