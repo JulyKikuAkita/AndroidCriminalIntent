@@ -21,6 +21,7 @@
     </plurals>
     <string name="no_crime_view">There are no crimes.</string>
     <string name="crime_suspect_text">Choose Suspect</string>
+    <string name="call_suspect">Call Suspect</string>
     <string name="crime_report_text">Send Crime Report</string>
     <string name="crime_report">%1$s!
       The crime was discovered on %2$s at %3$s. %4$s and %5$s.
@@ -31,4 +32,6 @@
     <string name="crime_report_suspect">the suspect is %s.</string>
     <string name="crime_report_subject">CriminalIntent Crime Report</string>
     <string name="send_report">Send crime report via</string>
+    <string name="permission_granted">Read Contacts permission granted</string>
+    <string name="permission_denied">Read Contacts permission denied</string>
 </resources>
