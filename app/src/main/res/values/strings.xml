@@ -34,4 +34,6 @@
     <string name="send_report">Send crime report via</string>
     <string name="permission_granted">Read Contacts permission granted</string>
     <string name="permission_denied">Read Contacts permission denied</string>
+    <string name="dismiss_button">Dismiss</string>
+    <string name="image_dialog_title">Zoom thumbnail</string>
 </resources>
