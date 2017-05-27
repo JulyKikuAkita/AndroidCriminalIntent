@@ -1,7 +1,9 @@
 package com.bignerdranch.android.criminalintent;
 
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 import java.util.UUID;
 
 public class Crime {
@@ -13,6 +15,7 @@ public class Crime {
     private String mSuspect;
     private boolean mRequiresPolice;
 
+    private String mDefaultLang = "en";
     private String mDatePattern = "E, MM dd, yyyy";
     private String mTimePattern = "hh:mm a, z";
     SimpleDateFormat mDateFormat;
@@ -75,13 +78,20 @@ public class Crime {
     }
 
     public String getFormatDate() {
-        mDateFormat = new SimpleDateFormat(mDatePattern);
-        return mDateFormat.format(mDate);
+        if (Locale.getDefault().getLanguage().equals(mDefaultLang)) {
+            mDateFormat = new SimpleDateFormat(mDatePattern);
+            return mDateFormat.format(mDate);
+        }
+        //consider locale
+        return DateFormat.getDateInstance().format(mDate);
     }
 
     public String getFormatTime() {
-        mTimeFormat = new SimpleDateFormat(mTimePattern);
-        return mTimeFormat.format(mDate);
+        if (Locale.getDefault().getLanguage().equals(mDefaultLang)) {
+            mTimeFormat = new SimpleDateFormat(mTimePattern);
+            return mTimeFormat.format(mDate);
+        }
+        return DateFormat.getTimeInstance().format(mDate);
     }
 
     public String getDatePattern() {

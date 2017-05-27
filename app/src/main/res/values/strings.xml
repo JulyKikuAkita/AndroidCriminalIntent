@@ -36,4 +36,8 @@
     <string name="permission_denied">Read Contacts permission denied</string>
     <string name="dismiss_button">Dismiss</string>
     <string name="image_dialog_title">Zoom thumbnail</string>
+    <string name="crime_photo_button_description">Take photo of crime scene</string> <string name="crime_photo_no_image_description">
+        Crime scene photo (not set)
+    </string>
+    <string name="crime_photo_image_description">Crime scene photo (set)</string>
 </resources>

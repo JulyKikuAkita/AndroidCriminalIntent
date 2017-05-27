@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">預謀犯罪</string>
+    <string name="crime_title_hint">輸入犯罪名稱</string>
+    <string name="crime_title_label">標題</string>
+    <string name="crime_details_label">內容</string>
+    <string name="crime_solved_label">已解決？</string>
+    <string name="crime_pager_first_button">最先</string>
+    <string name="crime_pager_last_button">最後</string>
+    <string name="date_picker_title">犯罪日期:</string>
+    <string name="time_picker_title">犯罪時間:</string>
+    <string name="new_crime">新預謀</string>
+    <string name="show_subtitle">顯示總和</string>
+    <string name="hide_subtitle">隱藏總和</string>
+    <string name="subtitle_format">%1$d 預謀</string>
+    <string name="delete_crime">刪除</string>
+    <string name="create_crime">建立</string>
+    <string name="delete_Crime_toast">已刪除！回到最前頁 </string>
+    <plurals name="subtitle_plural">
+        <item quantity="one">%1$d 預謀</item>
+        <item quantity="other">%1$d 預謀</item>
+    </plurals>
+    <string name="no_crime_view">現在沒有預謀</string>
+    <string name="crime_suspect_text">選擇嫌犯</string>
+    <string name="call_suspect">打給嫌犯</string>
+    <string name="crime_report_text">生成犯罪紀錄</string>
+    <string name="crime_report">%1$s!
+      犯罪預謀在 %2$s 日 幾時 %3$s. %4$s 和 %5$s.
+    </string>
+    <string name="crime_report_solved">預謀已解決</string>
+    <string name="crime_report_unsolved">預謀未解決</string>
+    <string name="crime_report_no_suspect">尚無嫌犯</string>
+    <string name="crime_report_suspect">嫌犯是 %s.</string>
+    <string name="crime_report_subject">預謀犯罪 詳細內容</string>
+    <string name="send_report">生成犯罪紀錄到其他app</string>
+    <string name="permission_granted">准許讀取聯絡人請求</string>
+    <string name="permission_denied">拒絕讀取聯絡人請求</string>
+    <string name="dismiss_button">返回</string>
+    <string name="image_dialog_title">縮圖</string>
+</resources>
